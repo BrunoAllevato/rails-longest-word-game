@@ -14,6 +14,17 @@
  *= require_self
  */
 
+/* .container {
+  text-align: center;
+} */
+
+/* .sort-letters {
+} */
+
+h1 {
+  padding-bottom: 30px;
+}
+
 h2 {
   display: inline;
   align-items: center;
@@ -22,6 +33,19 @@ h2 {
   border-style:solid;
   border-color:#336699;
   border-width:1px;
-  padding-left:3px;
-  padding-bottom:10px;
+  padding:10px;
+  padding-bottom:5px;
+  background-color: #336699;
+  color: white;
+  border-radius: 15%;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.11),
+              0 2px 2px rgba(0,0,0,0.11),
+              0 4px 4px rgba(0,0,0,0.11),
+              0 6px 8px rgba(0,0,0,0.11),
+              0 8px 16px rgba(0,0,0,0.11);
+  margin: 5px;
+}
+
+p {
+  padding-top: 33px;
 }

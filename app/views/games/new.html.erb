@@ -1,10 +1,16 @@
 <h1>New game</h1>
-<% @letters.each do |letter| %>
-  <%= "<h2>#{letter}</h2>".html_safe %>
-<% end %>
+
+<div class="sort-letters">
+  <% @letters.each do |letter| %>
+    <%= "<h2>#{letter}</h2>".html_safe %>
+  <% end %>
+</div>
+
 <p>What is the longest word you can find?</p>
-<form action="/score" method="" data-turbo="false">
-  <input type="text" name="">
-  <input type="submit" value="Play">
+
+<form action="/score" method="post" data-turbo="false">
+  <input type="text" name="word">
+  <input type="submit" class= "btn btn-primary" value="Play">
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <input type="hidden" name="letters" value="<%= @letters %>">
 </form>
